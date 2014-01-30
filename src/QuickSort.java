@@ -1,3 +1,11 @@
+/*
+ * touch README.md
+ * git init
+ * git add README.md
+ * git commit -m "first commit"
+ * git remote add origin https://github.com/cenezaraujo/Algorithm.git
+ * git push -u origin master
+ */
 public class QuickSort {
 	public static int id=0;
 	public static int particione(int[] A,int p, int r){
@@ -15,7 +23,6 @@ public class QuickSort {
 		A[i+1] = pivo;
 		return i+1;
 	}
-	
 	public static void sort(int[] A, int p, int r){
 		if (p < r) {
 			int q = particione(A, p, r);
@@ -23,7 +30,6 @@ public class QuickSort {
 			sort(A, q + 1, r);
 		}	
 	}
-
 	public static void main(String[] args) {
 		int[] A = {5,7,1,4,3,0,3,110,3};
 		int n = A.length -1;
