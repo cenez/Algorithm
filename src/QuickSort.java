@@ -1,10 +1,12 @@
 /*
  * touch README.md
  * git init
- * git add README.md
- * git commit -m "first commit"
  * git remote add origin https://github.com/cenezaraujo/Algorithm.git
- * git push -u origin master
+ * 
+ * 
+ * -> git add Arquivo.java
+ * -> git commit -m "Comentario"
+ * -> git push -u origin master
  */
 public class QuickSort {
 	public static int id=0;
