@@ -1,3 +1,6 @@
+/*
+ * 29/01/2014
+ * */
 public class MergeSort {
 	public static void main(String[] args) {
 		int[] t = {10,7,90,3,79,8,15,13,20};

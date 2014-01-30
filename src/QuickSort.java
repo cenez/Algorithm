@@ -1,4 +1,6 @@
 /*
+ * 29/01/2014
+ * 
  * touch README.md
  * git init
  * git remote add origin https://github.com/cenezaraujo/Algorithm.git

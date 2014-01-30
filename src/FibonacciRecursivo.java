@@ -1,3 +1,6 @@
+/*
+ * 29/01/2014
+ * */
 public class FibonacciRecursivo {
 	public static long fib(long n) {
 		if (n < 2) { return n;                       } 
