@@ -1,0 +1,24 @@
+#!/bin/sh
+#for i in $( ls ); do
+#	echo item: $i
+#done
+case $1 in
+	''|*[!0-9]*) 
+		echo "Informar a quantidade de EXECS" 
+	;;
+	*)
+	case $2 in
+		''|*[!0-9]*) 
+			echo "Informar a quantidade de TAREFAS" 
+		;;
+		*) 
+			echo "Executando ....." 
+			for i in $(seq 1 $1) 
+			do
+				mpirun -f ~/monolitico$2 -np $2 mono ~/Map-Reduce-in-HPE/Monolitic.Versions/SSSP-Parallel/bin/Program.exe
+				#echo "$i"
+			done
+		;;
+	esac
+	;;
+esac
