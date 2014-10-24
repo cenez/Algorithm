@@ -1,0 +1,2 @@
+em .ssh/config
+adicionar: ServerAliveInterval 60
