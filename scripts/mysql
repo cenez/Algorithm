@@ -5,4 +5,8 @@ mysql -u root -p
    exit
 mysql -h ip -u root -p
 
+Dump:
+mysqldump -u root -p dbname > dbname.db
+Restore:
+mysql -u root -p dbname < dbname.db
 
