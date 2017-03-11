@@ -1,1 +1,7 @@
 ps aux | grep -ie processo | awk '{print "kill -9 " $2}'
+
+SUM INTEGERS IN COLUMN 2
+awk '{s+=$2} END {print s}' file.txt
+
+PRINT COLUMN 2 - NUM1 SPACE NUM2
+cat file.txt | sed 's/ / /' | awk '{print $2}'
