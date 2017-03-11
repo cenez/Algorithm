@@ -5,3 +5,7 @@ awk '{s+=$2} END {print s}' file.txt
 
 PRINT COLUMN 2 - NUM1 SPACE NUM2
 cat file.txt | sed 's/ / /' | awk '{print $2}'
+
+SORT COLUMN i j
+awk '{ if($1>$2){s=$2; t=$1} else {s=$1; t=$2} } {print s" "t}' file.txt
+
