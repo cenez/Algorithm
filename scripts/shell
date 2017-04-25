@@ -19,3 +19,5 @@ paste -d" " source1 source2
 TRIM WHITESPACE:
 awk '{$1=$1};1' source > target
 
+Colunas separadas por (,). Substituir coluna2 por 1
+awk -F',' '{$2="1"; print}' source | sed -r 's/ /,/g'
