@@ -21,3 +21,5 @@ awk '{$1=$1};1' source > target
 
 Columns separated by (,). Replace column 2 for 1
 awk -F',' '{$2="1"; print}' source | sed -r 's/ /,/g'
+
+EFETIVE_LINES_COUNT=$(cat source |grep -v -e '^$' |grep -v "#" | wc -l)
