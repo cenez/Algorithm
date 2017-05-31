@@ -27,3 +27,5 @@ EFETIVE_LINES_COUNT=$(cat source |grep -v -e '^$' |grep -v "#" | wc -l)
 GENERATE SEQUENCE (NUM MOD SIZE)
 num=32 size=8 awk 'BEGIN{for(i=0;i<ENVIRON["num"];i++){s=i%ENVIRON["size"]; print s}}'
 
+SUM double in column 2, and print int
+echo "SUM: $(awk '{s+=$2} END {printf int(s)}' file.txt)"
