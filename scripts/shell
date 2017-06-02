@@ -29,3 +29,6 @@ num=32 size=8 awk 'BEGIN{for(i=0;i<ENVIRON["num"];i++){s=i%ENVIRON["size"]; prin
 
 SUM double in column 2, and print int
 echo "SUM: $(awk '{s+=$2} END {printf int(s)}' file.txt)"
+
+FIND MIN and MAX NUM from file=[column1 column2 column3 ...]
+awk '{for(i=1;i<=NF;i++)data[++k]=$i}END{m=asort(data);print "MIN:",data[1];print "MAX:",data[m]}' file.txt
