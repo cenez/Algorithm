@@ -34,6 +34,6 @@ FIND MIN and MAX NUM from file=[column1 column2 column3 ...]
 awk '{for(i=1;i<=NF;i++)data[++k]=$i}END{m=asort(data);print "MIN:",data[1];print "MAX:",data[m]}' file.txt
 
 GENERATE A ISO FROM BOOTABLE USB
-sudo dd if=/dev/sdc1 of=~/ubuntu-16.04.iso
+sudo dd if=/dev/sdb1 of=~/ubuntu-16.04.iso
 GENERATE A BOOTABLE USB FROM ISO
-sudo dd if=~/ubuntu-16.04.iso of=/dev/sdc1
+sudo dd bs=4M if=~/ubuntu-16.04.iso of=/dev/sdb status=progress oflag=sync
