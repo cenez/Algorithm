@@ -1,2 +1,9 @@
 em .ssh/config
 adicionar: ServerAliveInterval 60
+
+#Cluster
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+ssh -oStrictHostKeyChecking=no ubuntu@IP uptime
+
