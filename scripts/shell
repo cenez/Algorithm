@@ -38,3 +38,7 @@ sudo dd if=/dev/sdb of=~/ubuntu-16.04.iso
 GENERATE A BOOTABLE USB FROM ISO
 sudo wipefs --all /dev/sdb
 sudo dd bs=4M if=~/ubuntu-16.04.iso of=/dev/sdb status=progress oflag=sync
+
+NETWORK PORTS
+sudo netstat -tulpn
+
