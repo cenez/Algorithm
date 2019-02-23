@@ -42,3 +42,7 @@ sudo dd bs=4M if=~/ubuntu-16.04.iso of=/dev/sdb status=progress oflag=sync
 NETWORK PORTS
 sudo netstat -tulpn
 
+SUBSTRING
+  echo 'arquivo.ex' | cut -d'.' -f 1
+  echo 'arquivo.ex' | cut -d'.' -f 2
+
