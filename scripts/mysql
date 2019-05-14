@@ -1,3 +1,5 @@
+MySql change root password:
+mysqladmin -u root -p --user=root password "password"
 MySql Access:
 mysql -u root -p
    GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456';
