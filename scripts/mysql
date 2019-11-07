@@ -12,3 +12,4 @@ mysqldump -u root -p dbname > dbname.db
 Restore:
 mysql -u root -p dbname < dbname.db
 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'senha'; flush privileges;
