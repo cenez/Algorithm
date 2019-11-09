@@ -1,1 +1,1 @@
-sudo mono /usr/local/bin/nuget.exe restore HPCShelfApp.sln -o packages
+sudo mono /usr/local/bin/nuget.exe restore projeto.sln -o packages
