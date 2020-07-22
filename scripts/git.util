@@ -3,3 +3,6 @@ git config --global credential.helper 'cache --timeout=28800'
 
 #USER CREDENTIAL SAVE ONCE FOR ALL:
 git config --global credential.helper cache
+
+#RESET
+git reset --hard HEAD
