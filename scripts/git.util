@@ -6,3 +6,4 @@ git config --global credential.helper cache
 
 #RESET
 git reset --hard HEAD
+git checkout HEAD -- file.txt
