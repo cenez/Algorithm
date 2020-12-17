@@ -22,4 +22,5 @@ MimeType=application/x-ino;text/x-ino;text/x-arduino;
 Keywords=ino;embedded electronics;electronics;avr;microcontroller;
 StartupWMClass=processing-app-Base
 
-
+#Esp32, preferences:
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
