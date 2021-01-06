@@ -46,3 +46,5 @@ SUBSTRING
   echo 'arquivo.ex' | cut -d'.' -f 1
   echo 'arquivo.ex' | cut -d'.' -f 2
 
+#Diretorio padrao para usuario existende
+sudo mkhomedir_helper usuario
