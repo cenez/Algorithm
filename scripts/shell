@@ -48,3 +48,4 @@ SUBSTRING
 
 #Diretorio padrao para usuario existende
 sudo mkhomedir_helper usuario
+
